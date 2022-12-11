@@ -2,7 +2,6 @@ import React from 'react';
 import Search from '../../components/search/Search';
 import {Container, ContainerIcon, ContainerImg, CruzIcon, CruzIconOrange, CruzIconDarkPurple, OrangeBox} from './home.styled';
 
-
 const Home: React.FC = () => {
   return (
     <Container>
