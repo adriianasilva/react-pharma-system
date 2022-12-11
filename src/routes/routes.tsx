@@ -8,7 +8,7 @@ const RoutesViews: React.FC = () => {
   return(
     <Router>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Stores/>}/>
         <Route path='/produto' element={<Produto/>}/>
         <Route path='/stores' element={<Stores/>}/>
       </Routes>

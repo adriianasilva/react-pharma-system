@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { GiHealthNormal } from 'react-icons/gi';
+import { IoSearch } from "react-icons/io5";
 
 export const OrangeBox = styled.div `
     display: flex; 
@@ -15,6 +16,7 @@ export const OrangeBox = styled.div `
         top: 37px;
         margin-left: 10px;
         margin-top: 10px;
+        border-radius: 12px;
     }
 `;
 export const CruzIcon = styled(GiHealthNormal)`
@@ -23,7 +25,6 @@ export const CruzIcon = styled(GiHealthNormal)`
     color: #3C096C;
     margin-left: 30px;
     margin-top: 55px;
-    margin-left: 55px;
 `;
 
 export const ContainerSearch = styled.div`
@@ -35,22 +36,22 @@ export const ContainerSearch = styled.div`
     margin-top: 30px;
     `;
     export const Input = styled.input`
-    border: 3px solid #FF9E00;
+    border: 3px solid #FF9100;
     font-size: 30px;
-    width: 100%;
+    width: 90%;
     height: 50px;
     border-radius: 20px 20px 20px 0px;
-    background: url(assets/search-icon.svg) no repeat 30px 30px;
-    
  `;
  export const Content = styled.div`
      display: flex;
      flex-direction: row;
      padding: .5rem;
      height: auto;
-     width: 80%;
-     img{
-         height: 45px;
-         width: 45px;
-     }
+     width: 90%;
  `;
+ export const SearchIcon = styled(IoSearch)`
+    width: 60px;
+    height: 60px;
+    color: #3C096C;
+    padding-right: 5px;
+`;

@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import { GiHealthNormal } from 'react-icons/gi';
+import { IoSearch } from "react-icons/io5";
 
 export const Container = styled.div `
      heigth: 100%;
+     width: 100%;
+     
 `;
 export const OrangeBox = styled.div `
     display: flex; 
@@ -18,6 +21,7 @@ export const OrangeBox = styled.div `
         top: 37px;
         margin-left: 10px;
         margin-top: 10px;
+        border-radius: 12px;
     }
 `;
 export const CruzIcon = styled(GiHealthNormal)`
@@ -28,12 +32,6 @@ export const CruzIcon = styled(GiHealthNormal)`
     margin-top: 55px;
 `;
 
-export const CruzIconOrange = styled(GiHealthNormal)`
-    width: 175px;
-    height: 523px;
-    color: #FF9100;
-`;
-
 export const ContainerSearch = styled.div`
     padding: 1rem;
     display: flex;
@@ -41,18 +39,30 @@ export const ContainerSearch = styled.div`
     width: 100%;
     height: 70px;
     margin-top: 30px;
-    `;
+`;
 export const Input = styled.input`
-   border: 3px solid #FF9E00;
-   width: 90%;
-   height: 30px;
+    border: 3px solid #FF9100;
+    font-size: 30px;    
+    height: 50px;
+    border-radius: 20px 20px 20px 0px;
+    width: 90%;
 `;
 export const Content = styled.div`
-    border: 1px solid #3C096C;
+    display:flex;
+    flex-direction: row;
+    heigth: auto;
     padding: .5rem;
     width: 90%;
-    img {
-        height: 30px;
-        width: 30px
-    }
+`;
+
+export const SearchIcon = styled(IoSearch)`
+    width: 60px;
+    height: 60px;
+    color: #3C096C;
+    padding-right: 5px;
+`;
+export const ContainerResultado = styled.div`
+    width: 100%;
+    heigth: 100%;
+    background:#E9DEF1;
 `;

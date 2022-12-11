@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerSearch, Content, CruzIcon, Input, OrangeBox } from './header.styled';
+import { ContainerSearch, Content, CruzIcon, Input, OrangeBox, SearchIcon } from './header.styled';
 
 const Header: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Header: React.FC = () => {
           <img src='./assets/3.png'/>
           <ContainerSearch>
             <Content>
-              <img src='./assets/search-icon.svg'/>
+              <SearchIcon/>
               <Input/>
             </Content>
           </ContainerSearch>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ContainerSearch, Content, CruzIcon, CruzIconOrange, Input, OrangeBox } from './produto.styled';
+import {Container, ContainerResultado, ContainerSearch, Content, CruzIcon, Input, OrangeBox, SearchIcon} from './produto.styled';
 
 const Produto: React.FC = () => {
   return (
@@ -8,13 +8,14 @@ const Produto: React.FC = () => {
           <img src='./assets/3.png'/>
           <ContainerSearch>
             <Content>
-              <img src='./assets/search-icon.svg'/>
+              <SearchIcon/>
               <Input/>
             </Content>
           </ContainerSearch>
           <CruzIcon/>
-      </OrangeBox>    
-      <CruzIconOrange/>  
+      </OrangeBox>  
+      <ContainerResultado>
+      </ContainerResultado>  
     </Container>
   );
 }
