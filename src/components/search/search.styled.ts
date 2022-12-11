@@ -8,15 +8,22 @@ export const Container = styled.div`
     `;
 export const Input = styled.input`
    border: 3px solid #FF9E00;
-   width: 80%
-   heigth: 30px;
+   font-size: 30px;
+   width: 100%;
+   height: 50px;
+   border-radius: 20px 20px 20px 0px;
+   background: url(assets/search-icon.svg) no repeat 30px 30px;
+   
 `;
 export const Content = styled.div`
-    border: 1px solid #000000;
+    display: flex;
+    flex-direction: row;
     padding: .5rem;
+    height: auto;
+    width: 80%;
     img{
-        height: 30px;
-        width: 30px
+        height: 45px;
+        width: 45px;
     }
 `;
 

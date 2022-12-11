@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from '../../components/search/Search';
-import { Container, CruzIcon, CruzIconOrange, OrangeBox } from './home.styled';
+import {Container, ContainerIcon, CruzIcon, CruzIconOrange, CruzIconDarkPurple, OrangeBox} from './home.styled';
 
 
 const Home: React.FC = () => {
@@ -11,7 +11,11 @@ const Home: React.FC = () => {
           <CruzIcon/>
       </OrangeBox>
       <Search/>    
-      <CruzIconOrange/>  
+      <ContainerIcon>
+        <CruzIconDarkPurple/>
+        <CruzIconOrange/>
+      </ContainerIcon>
+        
     </Container>
   );
 }
