@@ -1,0 +1,24 @@
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+  cursor: pointer;
+  color: #54555B;
+}
+
+.stores img{
+  min-width: 20%;
+  min-height: 20px;
+  object-fit: none;
+}
+
+.stores h2{
+  font-size: 12;
+}
+
+.stores h3{
+  font-size: 10;
+}
