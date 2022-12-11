@@ -1,13 +1,15 @@
 import React from 'react';
 import Search from '../../components/search/Search';
-import {Container, ContainerIcon, CruzIcon, CruzIconOrange, CruzIconDarkPurple, OrangeBox} from './home.styled';
+import {Container, ContainerIcon, ContainerImg, CruzIcon, CruzIconOrange, CruzIconDarkPurple, OrangeBox} from './home.styled';
 
 
 const Home: React.FC = () => {
   return (
     <Container>
       <OrangeBox>
-          <img src='./assets/3.png'/>
+        <ContainerImg>
+        <img src='./assets/3.png'/>
+        </ContainerImg>
           <CruzIcon/>
       </OrangeBox>
       <Search/>    

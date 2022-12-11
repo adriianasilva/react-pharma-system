@@ -1,3 +1,4 @@
+import { IoSearch } from "react-icons/io5";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -12,8 +13,6 @@ export const Input = styled.input`
    width: 100%;
    height: 50px;
    border-radius: 20px 20px 20px 0px;
-   background: url(assets/search-icon.svg) no repeat 30px 30px;
-   
 `;
 export const Content = styled.div`
     display: flex;
@@ -21,9 +20,11 @@ export const Content = styled.div`
     padding: .5rem;
     height: auto;
     width: 80%;
-    img{
-        height: 45px;
-        width: 45px;
-    }
+`;
+export const SearchIcon = styled(IoSearch)`
+    width: 60px;
+    height: 60px;
+    color: #FF9100;
+    padding-right: 5px;
 `;
 

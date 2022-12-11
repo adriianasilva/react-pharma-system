@@ -1,13 +1,11 @@
 import React from 'react';
-import { Container, Content, Input} from './search.styled';
+import { Container, Content, Input, SearchIcon} from './search.styled';
+import { IoSearch } from 'react-icons/io5';
 
 const Search: React.FC = () => {
   return (
     <Container>
-        <Content>
-          <img src='./assets/search-icon.svg'/>
-          <Input/>
-        </Content>
+        <Content><SearchIcon/><Input/></Content>
     </Container>
   );
 }
