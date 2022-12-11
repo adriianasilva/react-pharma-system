@@ -1,0 +1,21 @@
+.page-stores {
+  color: #FFFFFF;  
+}
+
+.page-stores > h2 {
+  margin-left: 57px;
+  margin-bottom: 10px;
+}
+
+.page-stores hr {
+  width: 90%;
+  height: 1%;
+}
+
+.page-stores .list-stores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  color: #FFFFFF;
+  padding: 20px 135px 20px 135px;
+}
