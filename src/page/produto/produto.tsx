@@ -1,4 +1,5 @@
 import React from 'react';
+import { Result } from '../../components/result/result';
 import {Container, ContainerResultado, ContainerSearch, Content, CruzIcon, Input, OrangeBox, SearchIcon} from './produto.styled';
 
 const Produto: React.FC = () => {
@@ -15,6 +16,9 @@ const Produto: React.FC = () => {
           <CruzIcon/>
       </OrangeBox>  
       <ContainerResultado>
+        <Result name="teste" src="./assets/dipirona.jpg" price={20}/>
+        <Result name="teste" src="./assets/dipirona.jpg" price={20}/>
+        <Result name="teste" src="./assets/dipirona.jpg" price={20}/>
       </ContainerResultado>  
     </Container>
   );
