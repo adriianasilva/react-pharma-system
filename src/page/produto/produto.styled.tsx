@@ -62,7 +62,9 @@ export const SearchIcon = styled(IoSearch)`
     padding-right: 5px;
 `;
 export const ContainerResultado = styled.div`
+    display:flex;
+    flex-direction: column;
     width: 100%;
-    heigth: 100%;
+    height: 100%;
     background:#E9DEF1;
 `;
