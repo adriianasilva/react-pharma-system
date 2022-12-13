@@ -10,15 +10,22 @@ interface IStore {
 export function Store({ name, src, price }: IStore) {
   return(
     <div className="stores">
-        <img src={src} alt={name}/>
-        <div className="store-name">
-          <h2>{name}</h2>
-        </div>
+      <div className="img-product">
+         <img src={src} alt={name}/>
+      </div> 
         <div className="store-price">
-          <h3>{price}</h3>
+          <h2>{price}</h2>
+        </div>
+        <div className="store-name">
+          <h3>{name}</h3>
+        </div>
+        <div className="buy-button">
+          <button>
+            Comprar
+          </button>
         </div>
         <button>
-          Comprar
+          Como eu vou?
         </button>
     </div>
   );

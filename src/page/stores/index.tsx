@@ -52,6 +52,12 @@ export function Stores() {
         }
       </>
       <Store name="teste" src="./assets/dipirona.jpg" price={20}/>
+      <h2>Nome Produto</h2>
+      <hr id="line"></hr>
+      <div className="list-stores">
+        <Store name="teste" src="./assets/dipirona.jpg" price={20}/>
+        <Store name="teste" src="./assets/dipirona.jpg" price={20}/>
+        <Store name="teste" src="./assets/dipirona.jpg" price={20}/>
       </div>
     </div>
   );
