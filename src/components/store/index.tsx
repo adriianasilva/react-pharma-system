@@ -24,9 +24,6 @@ export function Store({ name, src, price }: IStore) {
             Comprar
           </button>
         </div>
-        <button>
-          Como eu vou?
-        </button>
     </div>
   );
 }

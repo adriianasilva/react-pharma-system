@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState} from "react";
-import { Container, Content, Input, SearchIcon} from './search.styled';
+import { Button, Container, Content, Input, SearchIcon} from './search.styled';
 import { IoSearch } from 'react-icons/io5';
 import { useNavigate } from "react-router-dom";
 
@@ -15,16 +15,25 @@ const Search: React.FC = () => {
   }
 
   function handleButton(e: any) {
+    // To store data
+    localStorage.setItem('product', value);
     e.preventDefault();
-    history(`/stores?name=${value}`);
+    history(`/produto?name=${value}`);
   }
 
+  function handleKeypress(e: any){
+    const key = e.charCode;
+    if(key === 13){
+      handleButton(e);
+    }
+  };
+  
   return (
     <Container>
         <Content>,
           <SearchIcon/>
-          <Input type="search" placeholder="Pesquise aqui o seu produto" onChange={handleSearch}/>
-          <button type="button" onClick={handleButton}>Pesquisar</button>
+          <Input type="search" placeholder="Pesquise aqui o seu produto" onChange={handleSearch} onKeyPress={handleKeypress}/>
+          <Button><button type="submit" onClick={handleButton}>Pesquisar</button></Button>
         </Content>
     </Container>
   );

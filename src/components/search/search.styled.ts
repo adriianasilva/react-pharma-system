@@ -1,3 +1,4 @@
+import { NOMEM } from "dns";
 import { IoSearch } from "react-icons/io5";
 import styled from "styled-components";
 
@@ -28,3 +29,6 @@ export const SearchIcon = styled(IoSearch)`
     padding-right: 5px;
 `;
 
+export const Button = styled.div `
+    display:none;
+`;
