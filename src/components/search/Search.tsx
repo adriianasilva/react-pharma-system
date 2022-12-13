@@ -1,23 +1,30 @@
 import React from 'react';
+import { useState} from "react";
 import { Container, Content, Input, SearchIcon} from './search.styled';
 import { IoSearch } from 'react-icons/io5';
 import { useNavigate } from "react-router-dom";
 
 const Search: React.FC = () => {
 
+  const [value, setValue] = useState("");
   const history = useNavigate();
 
-  function handleSubmit(e: any) {
+  function handleSearch(e: any) {
     e.preventDefault();
+    setValue(e.target.value);
+  }
 
-    history('/stores?name=dipirona');
-}
+  function handleButton(e: any) {
+    e.preventDefault();
+    history(`/stores?name=${value}`);
+  }
 
   return (
     <Container>
-        <Content>
+        <Content>,
           <SearchIcon/>
-          <Input onDoubleClick={handleSubmit}/>
+          <Input type="search" placeholder="Pesquise aqui o seu produto" onChange={handleSearch}/>
+          <button type="button" onClick={handleButton}>Pesquisar</button>
         </Content>
     </Container>
   );

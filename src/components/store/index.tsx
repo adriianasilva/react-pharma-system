@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 interface IStore {
@@ -17,7 +18,7 @@ export function Store({ name, src, price }: IStore) {
           <h3>{price}</h3>
         </div>
         <button>
-          Como eu vou?
+          Comprar
         </button>
     </div>
   );
