@@ -37,7 +37,7 @@ export function Stores() {
         {
           listMedicamentos.map((value: IProduct, i: any) => {
             console.log(value);
-            return <><Store name={value.name} src={value.image} price={value.price}/></>
+            return <><Store name={value.name} src={value.image} price={value.price} link={value.linkToProduct}/></>
           })
         }
       </>

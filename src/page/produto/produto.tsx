@@ -22,6 +22,7 @@ const Produto: React.FC = () => {
   const [listMedicamentos, setListMedicamentos] = useState([]);
   const [searchlabel, setsearchlabel] = useState<string | null>("product");
   const [value, setValue] = useState("");
+  const [aux, setAux] = useState("");
   const history = useNavigate();
 
   function handleSearch(e: any) {
@@ -49,6 +50,11 @@ const Produto: React.FC = () => {
     }
   };
 
+  function handleClick(e: any) {
+    e.preventDefault();
+    history(`/stores?name=${value}`);
+  }
+
   useEffect(() => {
     Axios.get(`https://nodejs-ufba.onrender.com/v1/search/${medicamento}/-12.952709/-38.460768`).then(response => {
       setListMedicamentos(response.data.results)
@@ -71,7 +77,7 @@ const Produto: React.FC = () => {
           <CruzIcon/>
       </OrangeBox>  
       <Page_title search_value={searchlabel}/>
-      <ContainerResultado>
+      <ContainerResultado onClick={handleClick}>
       {
           listMedicamentos.map((value: IProduct, i: any) => {
             console.log(value);
